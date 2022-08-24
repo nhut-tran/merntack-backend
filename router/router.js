@@ -13,9 +13,9 @@ router.get('/:id', countriesController.getCountryById);
 router.post('/', countriesController.createCountry);
 
 //delete country
-router.delete('/', countriesController.deleteCountry);
+router.delete('/:id', countriesController.deleteCountry);
 
 //update country
-router.patch('/', countriesController.updateCountry);
+router.put('/:id', countriesController.updateCountry);
 
 module.exports = router;
